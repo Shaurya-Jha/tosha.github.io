@@ -1,0 +1,539 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tosha</title>
+
+        <!-- bootstrap -->
+        <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="./css/bootstrap/bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+        </script>
+
+        <!-- tilt js library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.min.js"
+            integrity="sha512-14AZ/DxUrlF26z6v7egDkpJHKyJRn/7ue2BgpWZ/fmqrqVzf4PrQnToy99sHmKwzKev/VZ1tjPxusuTV/n8CcQ=="
+            crossorigin="anonymous"></script>
+
+
+        <!-- css -->
+        <link rel="stylesheet" href="./css/work-1.css">
+
+        <script type="text/javascript" src="js/jquery.convform.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+
+        <!-- animate css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+        <!-- AOS library -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    </head>
+
+    <body>
+
+        <!-- <div class="chat_icon">
+            <i class="fa fa-comments" aria-hidden="true"></i>
+        </div>
+
+        <div class="chat_box">
+            <div class="my-conv-form-wrapper">
+                <form action="" method="GET" class="hidden">
+
+                    <select data-conv-question="Hello! How can I help you" name="category">
+                        <option value="WebDevelopment">Animation Video ?</option>
+                        <option value="DigitalMarketing">Advertisement Video ?</option>
+                    </select>
+
+                    <div data-conv-fork="category">
+                        <div data-conv-case="Animation Video">
+                            <input type="text" name="domainName" data-conv-question="Please, tell me your domain name">
+                        </div>
+                        <div data-conv-case="Advertisement Video" data-conv-fork="first-question2">
+                            <input type="text" name="companyName" data-conv-question="Please, enter your company name">
+                        </div>
+                    </div>
+
+                    <input type="text" name="name" data-conv-question="Please, Enter your name">
+
+                    <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you." data-no-answer="true">
+
+                    <input data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">
+
+                    <select data-conv-question="Please Conform">
+                        <option value="Yes">Conform</option>
+                    </select>
+
+                </form>
+            </div>
+        </div> -->
+
+        <!-- <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div> -->
+
+        <header>
+
+            <div id="mySidebar" class="sidebar" onmouseleave="closeNav()">
+                <a href="javascript:void(0)" class="closebtn"></a>
+                <a href="./home.html">Home</a>
+                <a href="./about.html">About Us</a>
+                <a href="./work.html">Our Work</a>
+                <a href="./contact.html">Contact Us</a>
+                <a href="#">Appointment</a>
+                <a href="#">Shop</a>
+            </div>
+            <div id="main">
+                <button class="openbtn" onmouseover="openNav()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </button>
+            </div>
+
+        </header>
+
+        <section id="home-1">
+
+            <div class="image-box">
+
+                <img class="animate__animated animate__backInUp"
+                    src="./images/jakub-bazyluk-shot-1-establishing-arch-cath-circles-jb-18-06-2020-final.jpg" alt=""
+                    id="background-img">
+
+            </div>
+
+            <br><br><br><br><br>
+
+        </section><br><br><br><br><br><br>
+
+        <br><br><br><br><br>
+        <section id="home-2">
+
+            <div class="container">
+
+                <!-- Tab links -->
+                <div class="tab">
+                    <button class="tablinks" onclick="openWork(event, '3d')" id="defaultOpen">3D Animation</button>
+                    <button class="tablinks" onclick="openWork(event, '2d')">2D Animation</button>
+                    <button class="tablinks" onclick="openWork(event, 'video')">Video Editing</button>
+                    <button class="tablinks" onclick="openWork(event, 'graphic')">Graphic Designing</button>
+                </div>
+
+                <br><br>
+
+                <!-- Tab content -->
+                <div id="3d" class="tabcontent">
+
+                    <h3>3D Animation</h3>
+                    <br>
+
+                    <div class="row">
+
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./images/cycle-circle-door.jpg" alt="graphic">
+                            </div>
+
+                            <div class="card-body">
+                                <h5>Project Title</h5>
+                                <p class="card-text">more info about the product</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./images/cycle-circle-door.jpg" alt="graphic">
+                            </div>
+
+                            <div class="card-body">
+                                <h5>Project Title</h5>
+                                <p class="card-text">more info about the product</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./images/cycle-circle-door.jpg" alt="graphic">
+                            </div>
+
+                            <div class="card-body">
+                                <h5>Project Title</h5>
+                                <p class="card-text">more info about the product</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <br><br>
+
+                    <div class="row">
+
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./images/cycle-circle-door.jpg" alt="graphic">
+                            </div>
+
+                            <div class="card-body">
+                                <h5>Project Title</h5>
+                                <p class="card-text">more info about the product</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./images/cycle-circle-door.jpg" alt="graphic">
+                            </div>
+
+                            <div class="card-body">
+                                <h5>Project Title</h5>
+                                <p class="card-text">more info about the product</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./images/cycle-circle-door.jpg" alt="graphic">
+                            </div>
+
+                            <div class="card-body">
+                                <h5>Project Title</h5>
+                                <p class="card-text">more info about the product</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="2d" class="tabcontent">
+
+                    <h3>2D Animation</h3>
+                    <br>
+
+                    <div class="row">
+
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./images/helga-tanyushkina-2.jpg" alt="graphic">
+                            </div>
+
+                            <div class="card-body">
+                                <h5>Project Title</h5>
+                                <p class="card-text">more info about the product</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./images/helga-tanyushkina-2.jpg" alt="graphic">
+                            </div>
+
+                            <div class="card-body">
+                                <h5>Project Title</h5>
+                                <p class="card-text">more info about the product</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./images/helga-tanyushkina-2.jpg" alt="graphic">
+                            </div>
+
+                            <div class="card-body">
+                                <h5>Project Title</h5>
+                                <p class="card-text">more info about the product</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <br><br>
+
+                    <div class="row">
+
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./images/helga-tanyushkina-2.jpg" alt="graphic">
+                            </div>
+
+                            <div class="card-body">
+                                <h5>Project Title</h5>
+                                <p class="card-text">more info about the product</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./images/helga-tanyushkina-2.jpg" alt="graphic">
+                            </div>
+
+                            <div class="card-body">
+                                <h5>Project Title</h5>
+                                <p class="card-text">more info about the product</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./images/helga-tanyushkina-2.jpg" alt="graphic">
+                            </div>
+
+                            <div class="card-body">
+                                <h5>Project Title</h5>
+                                <p class="card-text">more info about the product</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="video" class="tabcontent">
+
+                    <h3>Video</h3>
+                    <br>
+
+                    <div class="row">
+
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./images/johannes-voss-417028-island-web.jpg" alt="graphic">
+                            </div>
+
+                            <div class="card-body">
+                                <h5>Project Title</h5>
+                                <p class="card-text">more info about the product</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./images/johannes-voss-417028-island-web.jpg" alt="graphic">
+                            </div>
+
+                            <div class="card-body">
+                                <h5>Project Title</h5>
+                                <p class="card-text">more info about the product</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./images/johannes-voss-417028-island-web.jpg" alt="graphic">
+                            </div>
+
+                            <div class="card-body">
+                                <h5>Project Title</h5>
+                                <p class="card-text">more info about the product</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <br><br>
+
+                    <div class="row">
+
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./images/johannes-voss-417028-island-web.jpg" alt="graphic">
+                            </div>
+
+                            <div class="card-body">
+                                <h5>Project Title</h5>
+                                <p class="card-text">more info about the product</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./images/johannes-voss-417028-island-web.jpg" alt="graphic">
+                            </div>
+
+                            <div class="card-body">
+                                <h5>Project Title</h5>
+                                <p class="card-text">more info about the product</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./images/johannes-voss-417028-island-web.jpg" alt="graphic">
+                            </div>
+
+                            <div class="card-body">
+                                <h5>Project Title</h5>
+                                <p class="card-text">more info about the product</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="graphic" class="tabcontent">
+
+                    <h3>Graphic</h3>
+                    <br>
+
+                    <div class="row">
+
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./images/andreas-rocha-townscapew-b.jpg" alt="graphic">
+                            </div>
+
+                            <div class="card-body">
+                                <h5>Project Title</h5>
+                                <p class="card-text">more info about the product</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./images/andreas-rocha-townscapew-b.jpg" alt="graphic">
+                            </div>
+
+                            <div class="card-body">
+                                <h5>Project Title</h5>
+                                <p class="card-text">more info about the product</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./images/andreas-rocha-townscapew-b.jpg" alt="graphic">
+                            </div>
+
+                            <div class="card-body">
+                                <h5>Project Title</h5>
+                                <p class="card-text">more info about the product</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <br><br>
+
+                    <div class="row">
+
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./images/andreas-rocha-townscapew-b.jpg" alt="graphic">
+                            </div>
+
+                            <div class="card-body">
+                                <h5>Project Title</h5>
+                                <p class="card-text">more info about the product</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./images/andreas-rocha-townscapew-b.jpg" alt="graphic">
+                            </div>
+
+                            <div class="card-body">
+                                <h5>Project Title</h5>
+                                <p class="card-text">more info about the product</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./images/andreas-rocha-townscapew-b.jpg" alt="graphic">
+                            </div>
+
+                            <div class="card-body">
+                                <h5>Project Title</h5>
+                                <p class="card-text">more info about the product</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <br><br>
+
+        <footer>
+            <div class="container-fluid">
+                <div class="info-box">
+                    <div class="col">
+                        <span><b>Tosha</b></span><br><br>
+                        <p>We create possibilities
+                            <br><br>
+                            for the commercial world.
+                            <br><br>
+                            Be Bold
+                        </p>
+                    </div>
+                    <div class="col">
+                        <span><b>Explore</b></span><br><br>
+                        <p>Home</p>
+                        <p>About Us</p>
+                        <p>Our Work</p>
+                        <p>Contact Us</p>
+                        <p>Appointment</p>
+                    </div>
+                    <div class="col">
+                        <span><b>Visit</b></span><br><br>
+                        <p>309/310 Aims prospero, <br> Sun Pharma Rd, <br> opposite Narayan Wadi, <br> Atladara,
+                            Vadodara,
+                            <br> Gujarat 390012
+                        </p>
+                    </div>
+                    <div class="col">
+                        <span><b>Follow</b></span><br><br>
+                        <p>Facebook</p>
+                        <p>Instagram</p>
+                        <p></p>
+                    </div>
+                    <div class="col">
+                        <span><b>Services</b></span><br><br>
+                        <p>3D Animation</p>
+                        <p>2D Animation</p>
+                        <p>Video Editing</p>
+                        <p>Graphic Designing</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <script src="./js/main.js"></script>
+        <script src="./js/tilt/tilt.jquery.min.js"></script>
+        <script>
+            AOS.init({
+                once: true
+            });
+        </script>
+        <script src="./js/jquery.js"></script>
+        <script type="text/javascript">
+            portfolioList = document.querySelectorAll('.portfolio-box');
+            portfolioList.forEach(function (portfolioPic) {
+                portfolioPic.addEventListener('click', function () {
+                    bg = this.style.backgroundImage;
+                    document.getElementById('port_pop_pic_bg').classList.add("active")
+                    document.getElementById('port_pop_pic').style.backgroundImage = bg
+                    document.getElementById('port_pop_pic').classList.add("active")
+                });
+            })
+            document.getElementById('port_pop_pic_bg').addEventListener('click', function () {
+                document.getElementById('port_pop_pic_bg').classList.remove("active")
+                document.getElementById('port_pop_pic').classList.remove("active")
+            })
+        </script>
+
+    </body>
+
+    </html>

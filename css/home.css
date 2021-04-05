@@ -1,0 +1,292 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 55px;
+    z-index: -1;
+    background-color: #242a47;
+    /* border: 2px solid red; */
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    background-color: #eeeeee;
+}
+
+.sidebar a {
+    padding: 6px 6px 6px 32px;
+    margin-top: 60px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #242a47;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #fd7014;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    top: 0;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    margin-left: 1410px;
+    z-index: 3;
+    float: inline-end;
+}
+
+.bar1, .bar2, .bar3 {
+    position: static;
+    width: 20px;
+    top: 0;
+    height: 2px;
+    background-color: #fff;
+    margin: 6px 0;
+    z-index: 2;
+}
+
+/* section 1 */
+
+#home-1 p{
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 300px;
+    font-size: 50px;
+    font: bold;
+    z-index: 1;
+}
+
+.image-box {
+    height: 400px;
+    /* background: url("../images/sombra-3d-wallpaper_3840x2400.jpg"); */
+    /* border: solid 2px white; */
+    /* background-size: cover; */
+}
+
+.image-box p{
+    position: absolute;
+    margin-left: 150px;
+    font-size: 50px;
+    font: bold;
+    /* margin-bottom: 1000px; */
+}
+
+#background-img {
+    top: 0;
+    height: 1000px;
+    width: 100%;
+    object-fit: fill;
+    /* background-size: cover; */
+    z-index: -1;
+    /* opacity: 0.2; */
+    /* background-image: linear-gradient(90deg , #fd7014, #242a47); */
+    background: url("../images/sombra-3d-wallpaper_3840x2400.jpg");
+
+}
+
+#home-1 span {
+    color: #eeeeee;
+}
+
+
+/* #home-2 { */
+    /* height: 1080px; */
+    /* width: 1920px; */
+    /* border: solid 2px green; */
+/* } */
+
+.col-8{
+    padding-top: 25px;
+}
+
+.col-4 {
+    float: right;
+}
+
+.bulb-box{
+    margin-top: 100px;
+    text-align: center;
+}
+
+#bulb-0{
+    height: 180px;
+    width: 180px;
+    /* margin-left:200px ; */
+}
+
+#bulb-1 {
+    height: 300px;
+    width: 300px;
+    /* margin-left: 400px; */
+    /* margin-left: 500px; */
+}
+
+#bulb-2{
+    height: 180px;
+    width: 180px;
+    /* margin-left: 200px; */
+    /* transform: rotateZ(60deg); */
+}
+
+.parallax-1{
+    /* The image used */
+  /* background-image: url("images/lloyd-allan-fortress-marketing-08b.jpg"); */
+  background: url("/images/lloyd-allan-fortress-marketing-08b.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-2{
+    /* The image used */
+  background-image: url("/images/andreas-rocha-landscapefinalb.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-3{
+    /* The image used */
+  background-image: url("/images/jakob-owens-Eznp0kLNkkI-unsplash.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.parallax-4{
+    /* The image used */
+  background-image: url("/images/theme-photos-CGpifH3FjOA-unsplash.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title{
+    text-align: center;
+}
+
+span{
+    color: #fd7014;
+}
+
+#service-info p{
+    font-size: 24px;
+}
+
+
+/* footer area */
+footer {
+    height: 300px;
+    /* width: 100%; */
+    /* border: solid 2px blue; */
+    background-color: #242a47;
+}
+
+.info-box {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 10%;
+    color: #eeeeee;
+}
+
+.col {
+    padding: 25px 20px;
+    font-size: 15px;
+}
+
+.col span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* page loading animation css */
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #242f3f;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+  }
+  .loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+  }
+  .loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+  }
+  @keyframes loader {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+  }
+  @keyframes loader-inner {
+    0% { height: 0%;}
+    25% { height: 0%;}
+    50% { height: 100%;}
+    75% { height: 100%;}
+    100% { height: 0%;}
+  }
